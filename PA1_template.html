@@ -174,8 +174,8 @@ plot(steps_per_interval$interval,steps_per_interval$steps, type=&quot;l&quot;, x
 max_interval</code></pre>
 <pre><code>## [1] 835</code></pre>
 </div>
-<div id="impute-missing-values." class="section level1">
-<h1>Impute missing values.</h1>
+<div id="impute-missing-values" class="section level1">
+<h1>Impute missing values</h1>
 <p>Compare imputed to non-imputed data.</p>
 <p>Missing data needed to be imputed. Only a simple imputation approach was required for this assignment. Missing values were imputed by inserting the average for each interval. Thus, if interval 10 was missing on 10-02-2012, the average for that interval for all days (0.1320755), replaced the NA.</p>
 <pre class="r"><code>incomplete &lt;- sum(!complete.cases(activity))
